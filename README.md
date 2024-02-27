@@ -12,3 +12,10 @@ O Bubble Sort, ou ordenação por flutuação, é um algoritmo de ordenação do
 ### 2.2 insertion Sort
 Insertion Sort, ou ordenação por inserção, é um algoritmo de ordenação que, dado uma estrutura constrói uma matriz final com um elemento de cada vez, uma inserção por vez. O Insertion Sort, quando se comparado ao Bubble Sort (algoritmo anterior),   
 
+### 2.3 Merge Sort 
+O merge sort, ou ordenação por mistura, é um exemplo de algoritmo de ordenação por comparação do tipo dividir-para-conquistar. Sua ideia básica consiste em Dividir e Conquistar. Fazendo os testes com os arquivos txt, temos: 
+|                   | Tempo de execução (em segundos)  | Quantidade de Comparações  |  Quantidade de Trocas   |
+|-------------------|----------------------------------|----------------------------|-------------------------|
+| Arquivo Ordenado  |                0,4               |           19.951.445       |            0            |
+| Arquivo Invertido |                0,925             |           41.902.892       |         10.884.999      | 
+| Arquivo Aleatorio |                2,395             |           64.805.742       |         10.765.507      |
