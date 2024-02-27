@@ -23,6 +23,31 @@ public class MergeSort {
 
         System.out.println("");
 
+        String caminhoArquivoInvertido = "C:\\Users\\gamer\\OneDrive\\Área de Trabalho\\algoritimos\\algoritmosordenacao\\txt\\invertidos.txt";
+        ArrayList<Integer> numerosArquivoinvertido = lerarquivo(numeros, caminhoArquivoInvertido);
+
+        System.out.println("Ordenação via Merge Sort (Invertidos):");
+        long inicioExecucaoInvertidos = System.currentTimeMillis();
+        int[] estatisticasInvertidos = ordenarMergeSort(numerosArquivoinvertido);
+        long fimExecucaoInvertidos = System.currentTimeMillis();
+        System.out.println("Tempo de execução: " + (fimExecucaoInvertidos - inicioExecucaoInvertidos));
+        System.out.println("Quantidade de comparações realizadas: " + estatisticasInvertidos[0]);
+        System.out.println("Quantidade de trocas realizadas: " + estatisticasInvertidos[1]);
+
+
+        System.out.println("");
+
+        String caminhoArquivoAleatorio = "C:\\Users\\gamer\\OneDrive\\Área de Trabalho\\algoritimos\\algoritmosordenacao\\txt\\aleatorios.txt";
+        ArrayList<Integer> numerosArquivoAleatorio = lerarquivo(numeros, caminhoArquivoAleatorio);
+
+        System.out.println("Ordenação via Merge Sort (Aleatorios):");
+        long inicioExecucaoAleatorio = System.currentTimeMillis();
+        int[] estatisticasAleatorio = ordenarMergeSort(numerosArquivoAleatorio);
+        long fimExecucaoAleatorio = System.currentTimeMillis();
+        System.out.println("Tempo de execução: " + (fimExecucaoAleatorio - inicioExecucaoAleatorio));
+        System.out.println("Quantidade de comparações realizadas: " + estatisticasAleatorio[0]);
+        System.out.println("Quantidade de trocas realizadas: " + estatisticasAleatorio[1]);
+
         // Repetir o mesmo padrão para os outros arquivos (invertidos e aleatórios)
     }
 
