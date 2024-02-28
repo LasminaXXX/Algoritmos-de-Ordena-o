@@ -14,8 +14,21 @@ Insertion Sort, ou ordenação por inserção, é um algoritmo de ordenação qu
 
 ### 2.3 Merge Sort 
 O merge sort, ou ordenação por mistura, é um exemplo de algoritmo de ordenação por comparação do tipo dividir-para-conquistar. Sua ideia básica consiste em Dividir e Conquistar. Fazendo os testes com os arquivos txt, temos: 
+
 |                   | Tempo de execução (em segundos)  | Quantidade de Comparações  |  Quantidade de Trocas   |
 |-------------------|----------------------------------|----------------------------|-------------------------|
 | Arquivo Ordenado  |                0,4               |           19.951.445       |            0            |
 | Arquivo Invertido |                0,925             |           41.902.892       |         10.884.999      | 
 | Arquivo Aleatorio |                2,395             |           64.805.742       |         10.765.507      |
+
+
+### 2.4 Quick Sort
+O Quick Sort é o algoritmo de ordenação interna mais rápido que se conhece para uma ampla variedade de situações. Provavelmente é o mais utilizado. A idéia básica é dividir o problema de ordenar um conjunto com n itens em dois problemas menores. Os problemas menores são ordenados independentemente. O Quicl Sort foi inventado por C.A.R. Hoare em 1960, quando visitou a Universidade de Moscovo como estudante. Naquela época, Hoare trabalhou em um projeto de tradução de máquina para o National Physical Laboratory. Implementado o algortimo Quick Sort mencionado acima e ultiizando para ordenar os arquivos, temos como resultado os seguintes valores: 
+
+|                   | Tempo de execução (em segundos)  | Quantidade de Comparações  |  Quantidade de Trocas   |
+|-------------------|----------------------------------|----------------------------|-------------------------|
+| Arquivo Ordenado  |                0,118             |              1             |            0            |
+| Arquivo Invertido |                0,368             |           500.000          |          500.000        | 
+| Arquivo Aleatorio |                0,551             |           87.505           |           87.504        |
+
+
