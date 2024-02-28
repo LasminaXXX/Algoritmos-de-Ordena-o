@@ -21,8 +21,8 @@ Insertion Sort, ou ordenação por inserção, é um algoritmo de ordenação qu
 |                   | Tempo de execução (em segundos)  | Quantidade de Comparações  |  Quantidade de Trocas   |
 |-------------------|----------------------------------|----------------------------|-------------------------|
 | Arquivo Ordenado  |              2548,787            |            622981199       |            0            |
-| Arquivo Invertido |                ----              |            5*10^11         |            5*10^11      | 
-| Arquivo Aleatorio |                ----              |            5*10^11         |            5*10^11      |
+| Arquivo Invertido |                ----              |            10^11           |            10^11        | 
+| Arquivo Aleatorio |                ----              |            10^11           |            10^11        |
 
 ### 2.3 Merge Sort 
 O merge sort, ou ordenação por mistura, é um exemplo de algoritmo de ordenação por comparação do tipo dividir-para-conquistar. Sua ideia básica consiste em Dividir e Conquistar. Fazendo os testes com os arquivos txt, temos: 
