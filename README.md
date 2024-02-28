@@ -7,10 +7,22 @@ Este projeto tem como objetivo realizar testes com algoritmos de ordenação usa
 o testes foram realizado em um notebook lenovo com processador ryzen 5 3500u, 12 Gb de memória ram, placa de vídeo integrada vega 8  e ssd de 256 Gb. Em relação ao SO da máquina, foi utilizado o Windows 10 Pro  64 bits versão 22h2.
 ## 2 Algoritmos
 ### 2.1 Bubble Sort 
-O Bubble Sort, ou ordenação por flutuação, é um algoritmo de ordenação dos mais simples. A ideia é percorrer um conjunto de elementos diversas vezes, e a cada passagem fazer flutuar para o topo o maior elemento da sequência. O algoritmo de ordenação Bubble Sort possui uma complexidade de tempo média e pior caso de O(n^2), o que significa que o tempo de execução aumenta quadrativamente com o tamanho da entrada. Para uma entrada significativamente grande, como 1 milhão de números, o Bubble Sort pode se tornar ineficiente comparado a algoritmos de ordenação mais eficientes, como o Merge Sort ou o Quick Sort, que têm complexidade de tempo média de O(n log n). Feitos os testes, segue as informações:
+O Bubble Sort, ou ordenação por flutuação, é um algoritmo de ordenação dos mais simples. A ideia é percorrer um conjunto de elementos diversas vezes, e a cada passagem fazer flutuar para o topo o maior elemento da sequência. O algoritmo de ordenação Bubble Sort possui uma complexidade de tempo média e pior caso de O(n^2), o que significa que o tempo de execução aumenta quadrativamente com o tamanho da entrada. Para uma entrada significativamente grande, como 1 milhão de números, o Bubble Sort pode se tornar ineficiente comparado a algoritmos de ordenação mais eficientes, como o Merge Sort ou o Quick Sort, que têm complexidade de tempo média de O(n log n). Na tentativa de realizar os testes, conseguimos o resultado referente a verificação do arquivo já ordenado, sendo retornado os seguintes valores:
+
+|                   | Tempo de execução (em segundos)  | Quantidade de Comparações  |  Quantidade de Trocas   |
+|-------------------|----------------------------------|----------------------------|-------------------------|
+| Arquivo Ordenado  |              2558,787            |            726.379.968       |            0            |
+| Arquivo Invertido |                ----              |              10^12         |          10^12          | 
+| Arquivo Aleatorio |                ----              |              10^12         |          10^12          |
 
 ### 2.2 insertion Sort
-Insertion Sort, ou ordenação por inserção, é um algoritmo de ordenação que, dado uma estrutura constrói uma matriz final com um elemento de cada vez, uma inserção por vez. O Insertion Sort, quando se comparado ao Bubble Sort (algoritmo anterior),   
+Insertion Sort, ou ordenação por inserção, é um algoritmo de ordenação que, dado uma estrutura constrói uma matriz final com um elemento de cada vez, uma inserção por vez. O Insertion Sort, quando se comparado ao Bubble Sort (algoritmo anterior), tem sim um aumento de desempenho, mas ainda é um algoritmo que possui uma complexidade de tempo média e pior caso de O(n^2), assim como o Bubble Sort.
+
+|                   | Tempo de execução (em segundos)  | Quantidade de Comparações  |  Quantidade de Trocas   |
+|-------------------|----------------------------------|----------------------------|-------------------------|
+| Arquivo Ordenado  |              2548,787            |            622981199       |            0            |
+| Arquivo Invertido |                ----              |            5*10^11         |            5*10^11      | 
+| Arquivo Aleatorio |                ----              |            5*10^11         |            5*10^11      |
 
 ### 2.3 Merge Sort 
 O merge sort, ou ordenação por mistura, é um exemplo de algoritmo de ordenação por comparação do tipo dividir-para-conquistar. Sua ideia básica consiste em Dividir e Conquistar. Fazendo os testes com os arquivos txt, temos: 
